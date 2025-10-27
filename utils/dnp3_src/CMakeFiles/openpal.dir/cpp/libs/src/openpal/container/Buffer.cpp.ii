@@ -1,0 +1,1018 @@
+# 0 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/openpal/container/Buffer.cpp"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/openpal/container/Buffer.cpp"
+# 21 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/openpal/container/Buffer.cpp"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Buffer.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Buffer.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/HasSize.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/HasSize.h"
+namespace openpal
+{
+
+template <class SizeType>
+class HasSize
+{
+
+public:
+
+ HasSize(SizeType size_) : size(size_)
+ {}
+
+ SizeType Size() const
+ {
+  return size;
+ }
+
+ bool IsEmpty() const
+ {
+  return size == 0;
+ }
+
+ bool IsNotEmpty() const
+ {
+  return size != 0;
+ }
+
+protected:
+
+ SizeType size;
+
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h" 2
+
+# 1 "/usr/include/assert.h" 1 3 4
+# 35 "/usr/include/assert.h" 3 4
+# 1 "/usr/include/features.h" 1 3 4
+# 415 "/usr/include/features.h" 3 4
+# 1 "/usr/include/features-time64.h" 1 3 4
+# 20 "/usr/include/features-time64.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 21 "/usr/include/features-time64.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 22 "/usr/include/features-time64.h" 2 3 4
+# 416 "/usr/include/features.h" 2 3 4
+# 523 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 730 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 731 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 732 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 524 "/usr/include/features.h" 2 3 4
+# 547 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 548 "/usr/include/features.h" 2 3 4
+# 36 "/usr/include/assert.h" 2 3 4
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h" 2
+
+namespace openpal
+{
+
+
+
+
+template <class ValueType, class IndexType>
+class ArrayView : public HasSize<IndexType>
+{
+
+public:
+
+ static ArrayView<ValueType, IndexType> Empty()
+ {
+  return ArrayView(nullptr, 0);
+ }
+
+ ArrayView(ValueType* start, IndexType aSize) : HasSize<IndexType>(aSize), buffer(start)
+ {}
+
+ inline bool Contains(IndexType index) const
+ {
+  return index < this->size;
+ }
+
+ inline bool Contains(IndexType start, IndexType stop) const
+ {
+  return (start < stop) && Contains(stop);
+ }
+
+ inline ValueType& operator[](IndexType index)
+ {
+  
+# 60 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h" 3 4
+ (static_cast<void> (0))
+# 60 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h"
+                           ;
+  return buffer[index];
+ }
+
+ inline const ValueType& operator[](IndexType index) const
+ {
+  
+# 66 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h" 3 4
+ (static_cast<void> (0))
+# 66 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/ArrayView.h"
+                           ;
+  return buffer[index];
+ }
+
+ template <class Action>
+ void foreach(const Action& action)
+ {
+  for (IndexType i = 0; i < this->size; ++i)
+  {
+   action(buffer[i]);
+  }
+ }
+
+ template <class Action>
+ void foreachIndex(const Action& action)
+ {
+  for (IndexType i = 0; i < this->size; ++i)
+  {
+   action(buffer[i], i);
+  }
+ }
+
+private:
+ ValueType* buffer;
+};
+
+
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h"
+# 1 "/usr/include/c++/15/cstdint" 1 3
+# 40 "/usr/include/c++/15/cstdint" 3
+# 1 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 1 3
+# 37 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wvariadic-macros"
+
+#pragma GCC diagnostic ignored "-Wc++11-extensions"
+#pragma GCC diagnostic ignored "-Wc++23-extensions"
+# 336 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+  typedef long unsigned int size_t;
+  typedef long int ptrdiff_t;
+
+
+  typedef decltype(nullptr) nullptr_t;
+
+
+#pragma GCC visibility push(default)
+
+
+  extern "C++" __attribute__ ((__noreturn__, __always_inline__))
+  inline void __terminate() noexcept
+  {
+    void terminate() noexcept __attribute__ ((__noreturn__,__cold__));
+    terminate();
+  }
+#pragma GCC visibility pop
+}
+# 369 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+namespace __gnu_cxx
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+# 573 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+#pragma GCC visibility push(default)
+
+
+
+
+  __attribute__((__always_inline__))
+  constexpr inline bool
+  __is_constant_evaluated() noexcept
+  {
+
+
+
+
+
+    return __builtin_is_constant_evaluated();
+
+
+
+  }
+#pragma GCC visibility pop
+}
+# 617 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+#pragma GCC visibility push(default)
+
+  extern "C++" __attribute__ ((__noreturn__)) __attribute__((__cold__))
+  void
+  __glibcxx_assert_fail
+    (const char* __file, int __line, const char* __function,
+     const char* __condition)
+  noexcept;
+#pragma GCC visibility pop
+}
+# 648 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+  __attribute__((__always_inline__,__visibility__("default")))
+  inline void
+  __glibcxx_assert_fail()
+  { }
+}
+# 727 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+# 1 "/usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h" 1 3
+# 728 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 2 3
+
+
+# 1 "/usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h" 1 3
+# 731 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 2 3
+# 887 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace __gnu_cxx
+{
+  typedef __decltype(0.0bf16) __bfloat16_t;
+}
+# 953 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+#pragma GCC diagnostic pop
+# 41 "/usr/include/c++/15/cstdint" 2 3
+
+
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h" 1 3 4
+# 9 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h" 3 4
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 35 "/usr/include/stdint.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+typedef __uint8_t uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+# 38 "/usr/include/stdint.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
+
+
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
+# 42 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 60 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 76 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 90 "/usr/include/stdint.h" 3 4
+typedef __intmax_t intmax_t;
+typedef __uintmax_t uintmax_t;
+# 12 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h" 2 3 4
+#pragma GCC diagnostic pop
+# 48 "/usr/include/c++/15/cstdint" 2 3
+
+
+namespace std
+{
+
+  using ::int8_t;
+  using ::int16_t;
+  using ::int32_t;
+  using ::int64_t;
+
+  using ::int_fast8_t;
+  using ::int_fast16_t;
+  using ::int_fast32_t;
+  using ::int_fast64_t;
+
+  using ::int_least8_t;
+  using ::int_least16_t;
+  using ::int_least32_t;
+  using ::int_least64_t;
+
+  using ::intmax_t;
+  using ::intptr_t;
+
+  using ::uint8_t;
+  using ::uint16_t;
+  using ::uint32_t;
+  using ::uint64_t;
+
+  using ::uint_fast8_t;
+  using ::uint_fast16_t;
+  using ::uint_fast32_t;
+  using ::uint_fast64_t;
+
+  using ::uint_least8_t;
+  using ::uint_least16_t;
+  using ::uint_least32_t;
+  using ::uint_least64_t;
+
+  using ::uintmax_t;
+  using ::uintptr_t;
+# 144 "/usr/include/c++/15/cstdint" 3
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h" 2
+# 34 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h"
+
+# 34 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h"
+namespace openpal
+{
+namespace sizes
+{
+
+static const uint16_t MAX_ERASURE_SIZE = 12 * sizeof(void*);
+
+}
+}
+# 78 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h"
+# 1 "/usr/include/c++/15/new" 1 3
+# 43 "/usr/include/c++/15/new" 3
+# 1 "/usr/include/c++/15/bits/exception.h" 1 3
+# 40 "/usr/include/c++/15/bits/exception.h" 3
+
+# 40 "/usr/include/c++/15/bits/exception.h" 3
+extern "C++" {
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 61 "/usr/include/c++/15/bits/exception.h" 3
+  class exception
+  {
+  public:
+    exception() noexcept { }
+    virtual ~exception() noexcept;
+
+    exception(const exception&) = default;
+    exception& operator=(const exception&) = default;
+    exception(exception&&) = default;
+    exception& operator=(exception&&) = default;
+
+
+
+
+    virtual const char*
+    what() const noexcept;
+  };
+
+
+
+}
+
+}
+# 44 "/usr/include/c++/15/new" 2 3
+
+
+
+
+
+# 1 "/usr/include/c++/15/bits/version.h" 1 3
+# 50 "/usr/include/c++/15/new" 2 3
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wc++11-extensions"
+
+#pragma GCC visibility push(default)
+
+extern "C++" {
+
+namespace std
+{
+
+
+
+
+
+
+  class bad_alloc : public exception
+  {
+  public:
+    bad_alloc() throw() { }
+
+
+    bad_alloc(const bad_alloc&) = default;
+    bad_alloc& operator=(const bad_alloc&) = default;
+
+
+
+
+    virtual ~bad_alloc() throw();
+
+
+    virtual const char* what() const throw();
+  };
+
+
+  class bad_array_new_length : public bad_alloc
+  {
+  public:
+    bad_array_new_length() throw() { }
+
+
+
+    virtual ~bad_array_new_length() throw();
+
+
+    virtual const char* what() const throw();
+  };
+
+
+
+
+
+
+  struct nothrow_t
+  {
+
+    explicit nothrow_t() = default;
+
+  };
+
+  extern const nothrow_t nothrow;
+
+
+
+  typedef void (*new_handler)();
+
+
+
+  new_handler set_new_handler(new_handler) throw();
+
+
+
+  new_handler get_new_handler() noexcept;
+
+}
+# 137 "/usr/include/c++/15/new" 3
+[[__nodiscard__]] void* operator new(std::size_t)
+ 
+  __attribute__((__externally_visible__, __malloc__));
+[[__nodiscard__]] void* operator new[](std::size_t)
+ 
+  __attribute__((__externally_visible__, __malloc__));
+void operator delete(void*) noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*) noexcept
+  __attribute__((__externally_visible__));
+
+void operator delete(void*, std::size_t)
+  noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*, std::size_t)
+  noexcept
+  __attribute__((__externally_visible__));
+
+[[__nodiscard__]] void* operator new(std::size_t, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__, __alloc_size__ (1), __malloc__));
+[[__nodiscard__]] void* operator new[](std::size_t, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__, __alloc_size__ (1), __malloc__));
+void operator delete(void*, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__));
+# 205 "/usr/include/c++/15/new" 3
+[[__nodiscard__]] inline
+void* operator new(std::size_t, void* __p)
+  noexcept
+{ return __p; }
+[[__nodiscard__]] inline
+void* operator new[](std::size_t, void* __p)
+  noexcept
+{ return __p; }
+
+
+
+
+inline void operator delete (void*, void*)
+  noexcept
+{ }
+inline void operator delete[](void*, void*)
+  noexcept
+{ }
+
+}
+
+namespace std
+{
+# 264 "/usr/include/c++/15/new" 3
+}
+
+#pragma GCC visibility pop
+#pragma GCC diagnostic pop
+# 79 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h" 2
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Uncopyable.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Uncopyable.h"
+
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Uncopyable.h"
+namespace openpal
+{
+
+
+
+class Uncopyable
+{
+protected:
+ Uncopyable() {}
+ ~Uncopyable() {}
+
+private:
+
+ Uncopyable(const Uncopyable&) = delete;
+ Uncopyable& operator=(const Uncopyable&) = delete;
+};
+
+class StaticOnly
+{
+
+private:
+
+ StaticOnly() = delete;
+ StaticOnly(const StaticOnly&) = delete;
+ StaticOnly& operator=(const StaticOnly&) = delete;
+};
+
+}
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 2
+
+# 1 "/usr/include/assert.h" 1 3 4
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 2
+
+
+namespace openpal
+{
+
+
+
+
+template <class ValueType, class IndexType>
+class Array : public HasSize<IndexType>
+{
+
+public:
+
+ Array(IndexType size) :
+  HasSize<IndexType>(size),
+  buffer(new ValueType[size]())
+ {}
+
+ Array() :
+  HasSize<IndexType>(0),
+  buffer(nullptr)
+ {}
+
+ Array(const Array& copy) :
+  HasSize<IndexType>(copy.Size()),
+  buffer(new ValueType[copy.Size()])
+ {
+  for(IndexType i = 0; i < copy.Size(); ++i) buffer[i] = copy.buffer[i];
+ }
+
+ ArrayView<ValueType, IndexType> ToView() const
+ {
+  return ArrayView<ValueType, IndexType>(buffer, this->size);
+ }
+
+ inline bool Contains(IndexType index) const
+ {
+  return index < this->size;
+ }
+
+ inline ValueType& operator[](IndexType index)
+ {
+  
+# 73 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 3 4
+ (static_cast<void> (0))
+# 73 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h"
+                           ;
+  return buffer[index];
+ }
+
+ const ValueType& operator[](IndexType index) const
+ {
+  
+# 79 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h" 3 4
+ (static_cast<void> (0))
+# 79 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Array.h"
+                           ;
+  return buffer[index];
+ }
+
+ template <class Action>
+ void foreach(const Action& action) const
+ {
+  for(IndexType i = 0; i < this->size; ++i) action(buffer[i]);
+ }
+
+ template <class Action>
+ void foreach(const Action& action)
+ {
+  for(IndexType i = 0; i < this->size; ++i) action(buffer[i]);
+ }
+
+ template <class Action>
+ void foreachIndex(const Action& action)
+ {
+  for(IndexType i = 0; i < this->size; ++i) action(buffer[i], i);
+ }
+
+
+ template <class Action>
+ void foreachIndex(const Action& action) const
+ {
+  for(uint32_t i = 0; i < this->size; ++i) action(buffer[i], i);
+ }
+
+ virtual ~Array()
+ {
+  delete[] buffer;
+ }
+
+protected:
+
+ ValueType* buffer;
+
+private:
+
+ Array& operator=(const Array&) = delete;
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Buffer.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/WSlice.h" 1
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/WSlice.h"
+namespace openpal
+{
+
+class RSlice;
+
+
+
+
+
+class WSlice : public HasSize<uint32_t>
+{
+public:
+
+ static WSlice Empty();
+
+ void SetAllTo(uint8_t value);
+
+ WSlice();
+ WSlice(uint8_t* pBuffer, uint32_t size);
+
+ void Clear();
+
+ uint32_t Advance(uint32_t count);
+
+ WSlice Skip(uint32_t count) const;
+
+ RSlice ToRSlice() const;
+
+ operator uint8_t* ()
+ {
+  return pBuffer;
+ };
+
+ operator uint8_t const* () const
+ {
+  return pBuffer;
+ };
+
+private:
+
+ uint8_t* pBuffer;
+};
+
+
+}
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Buffer.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/RSlice.h" 1
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/RSlice.h"
+namespace openpal
+{
+
+class WSlice;
+
+
+
+
+
+class RSlice : public HasSize<uint32_t>
+{
+
+public:
+
+ static RSlice Empty();
+
+ RSlice();
+
+ RSlice(uint8_t const* pBuffer, uint32_t size);
+
+ void Clear();
+
+ RSlice CopyTo(WSlice&) const;
+
+ RSlice Take(uint32_t count) const;
+
+ RSlice Skip(uint32_t count) const;
+
+ bool Equals(const RSlice& rhs) const;
+
+ void Advance(uint32_t count);
+
+ operator uint8_t const* () const
+ {
+  return pBuffer;
+ };
+
+private:
+ uint8_t const* pBuffer;
+
+};
+
+}
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Buffer.h" 2
+
+
+
+namespace openpal
+{
+
+class Buffer : public Array<uint8_t, uint32_t>
+{
+
+public:
+
+ Buffer();
+
+ Buffer(uint32_t size);
+
+
+ Buffer(const RSlice& input);
+
+ virtual ~Buffer() {}
+
+ RSlice ToRSlice() const;
+
+ WSlice GetWSlice();
+
+ WSlice GetWSlice(uint32_t maxSize);
+
+ const uint8_t* operator()() const
+ {
+  return buffer;
+ }
+
+ uint8_t* operator()()
+ {
+  return buffer;
+ }
+};
+
+}
+# 22 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/openpal/container/Buffer.cpp" 2
+
+namespace openpal
+{
+Buffer::Buffer() : Array<uint8_t, uint32_t>(0)
+{}
+
+Buffer::Buffer(uint32_t size) : Array<uint8_t, uint32_t>(size)
+{}
+
+Buffer::Buffer(const RSlice& input) : Array<uint8_t, uint32_t>(input.Size())
+{
+ auto dest = this->GetWSlice();
+ input.CopyTo(dest);
+}
+
+RSlice Buffer::ToRSlice() const
+{
+ return RSlice(this->buffer, this->size);
+}
+
+WSlice Buffer::GetWSlice()
+{
+ return WSlice(this->buffer, this->Size());
+}
+
+WSlice Buffer::GetWSlice(uint32_t maxSize)
+{
+ if (maxSize <= this->Size())
+ {
+  return WSlice(this->buffer, maxSize);
+ }
+ else
+ {
+  return GetWSlice();
+ }
+}
+}

@@ -1,0 +1,3163 @@
+# 0 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/opendnp3/master/HeaderTypes.cpp"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 0 "<command-line>" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/opendnp3/master/HeaderTypes.cpp"
+# 21 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/opendnp3/master/HeaderTypes.cpp"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/master/HeaderTypes.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/master/HeaderTypes.h"
+# 1 "/usr/include/c++/15/cstdint" 1 3
+# 40 "/usr/include/c++/15/cstdint" 3
+# 1 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 1 3
+# 37 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wvariadic-macros"
+
+#pragma GCC diagnostic ignored "-Wc++11-extensions"
+#pragma GCC diagnostic ignored "-Wc++23-extensions"
+# 336 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+  typedef long unsigned int size_t;
+  typedef long int ptrdiff_t;
+
+
+  typedef decltype(nullptr) nullptr_t;
+
+
+#pragma GCC visibility push(default)
+
+
+  extern "C++" __attribute__ ((__noreturn__, __always_inline__))
+  inline void __terminate() noexcept
+  {
+    void terminate() noexcept __attribute__ ((__noreturn__,__cold__));
+    terminate();
+  }
+#pragma GCC visibility pop
+}
+# 369 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+namespace __gnu_cxx
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+# 573 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+#pragma GCC visibility push(default)
+
+
+
+
+  __attribute__((__always_inline__))
+  constexpr inline bool
+  __is_constant_evaluated() noexcept
+  {
+
+
+
+
+
+    return __builtin_is_constant_evaluated();
+
+
+
+  }
+#pragma GCC visibility pop
+}
+# 617 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+#pragma GCC visibility push(default)
+
+  extern "C++" __attribute__ ((__noreturn__)) __attribute__((__cold__))
+  void
+  __glibcxx_assert_fail
+    (const char* __file, int __line, const char* __function,
+     const char* __condition)
+  noexcept;
+#pragma GCC visibility pop
+}
+# 648 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace std
+{
+  __attribute__((__always_inline__,__visibility__("default")))
+  inline void
+  __glibcxx_assert_fail()
+  { }
+}
+# 727 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+# 1 "/usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h" 1 3
+# 39 "/usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h" 3
+# 1 "/usr/include/features.h" 1 3 4
+# 415 "/usr/include/features.h" 3 4
+# 1 "/usr/include/features-time64.h" 1 3 4
+# 20 "/usr/include/features-time64.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 21 "/usr/include/features-time64.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 22 "/usr/include/features-time64.h" 2 3 4
+# 416 "/usr/include/features.h" 2 3 4
+# 523 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 730 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 731 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 732 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 524 "/usr/include/features.h" 2 3 4
+# 547 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 548 "/usr/include/features.h" 2 3 4
+# 40 "/usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h" 2 3
+# 728 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 2 3
+
+
+# 1 "/usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h" 1 3
+# 731 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 2 3
+# 887 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+namespace __gnu_cxx
+{
+  typedef __decltype(0.0bf16) __bfloat16_t;
+}
+# 953 "/usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h" 3
+#pragma GCC diagnostic pop
+# 41 "/usr/include/c++/15/cstdint" 2 3
+
+
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h" 1 3 4
+# 9 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h" 3 4
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 35 "/usr/include/stdint.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+typedef __uint8_t uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+# 38 "/usr/include/stdint.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
+
+
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
+# 42 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 60 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 76 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 90 "/usr/include/stdint.h" 3 4
+typedef __intmax_t intmax_t;
+typedef __uintmax_t uintmax_t;
+# 12 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h" 2 3 4
+#pragma GCC diagnostic pop
+# 48 "/usr/include/c++/15/cstdint" 2 3
+
+
+namespace std
+{
+
+  using ::int8_t;
+  using ::int16_t;
+  using ::int32_t;
+  using ::int64_t;
+
+  using ::int_fast8_t;
+  using ::int_fast16_t;
+  using ::int_fast32_t;
+  using ::int_fast64_t;
+
+  using ::int_least8_t;
+  using ::int_least16_t;
+  using ::int_least32_t;
+  using ::int_least64_t;
+
+  using ::intmax_t;
+  using ::intptr_t;
+
+  using ::uint8_t;
+  using ::uint16_t;
+  using ::uint32_t;
+  using ::uint64_t;
+
+  using ::uint_fast8_t;
+  using ::uint_fast16_t;
+  using ::uint_fast32_t;
+  using ::uint_fast64_t;
+
+  using ::uint_least8_t;
+  using ::uint_least16_t;
+  using ::uint_least32_t;
+  using ::uint_least64_t;
+
+  using ::uintmax_t;
+  using ::uintptr_t;
+# 144 "/usr/include/c++/15/cstdint" 3
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/master/HeaderTypes.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/QualifierCode.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/QualifierCode.h"
+
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/QualifierCode.h"
+namespace opendnp3 {
+
+
+
+
+enum class QualifierCode : uint8_t
+{
+  UINT8_START_STOP = 0x0,
+  UINT16_START_STOP = 0x1,
+  ALL_OBJECTS = 0x6,
+  UINT8_CNT = 0x7,
+  UINT16_CNT = 0x8,
+  UINT8_CNT_UINT8_INDEX = 0x17,
+  UINT16_CNT_UINT16_INDEX = 0x28,
+  UINT16_FREE_FORMAT = 0x5B,
+  UNDEFINED = 0xFF
+};
+
+uint8_t QualifierCodeToType(QualifierCode arg);
+QualifierCode QualifierCodeFromType(uint8_t arg);
+char const* QualifierCodeToString(QualifierCode arg);
+
+}
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/master/HeaderTypes.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/app/GroupVariationID.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/app/GroupVariationID.h"
+namespace opendnp3
+{
+
+
+struct GroupVariationID
+{
+ GroupVariationID() : group(0xFF), variation(0xFF)
+ {}
+
+ GroupVariationID(uint8_t aGroup, uint8_t aVariation):
+  group(aGroup),
+  variation(aVariation)
+ {
+
+ }
+
+ uint8_t group;
+ uint8_t variation;
+};
+
+}
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/master/HeaderTypes.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/PointClass.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/PointClass.h"
+namespace opendnp3 {
+
+
+
+
+enum class PointClass : uint8_t
+{
+
+  Class0 = 0x1,
+
+  Class1 = 0x2,
+
+  Class2 = 0x4,
+
+  Class3 = 0x8
+};
+
+
+}
+# 29 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/master/HeaderTypes.h" 2
+
+namespace opendnp3
+{
+
+class HeaderWriter;
+
+
+
+
+enum class HeaderType : uint8_t
+{
+ AllObjects,
+ Ranged8,
+ Ranged16,
+ LimitedCount8,
+ LimitedCount16
+};
+
+
+
+
+template <class T>
+struct StartStopRange
+{
+ T start;
+ T stop;
+};
+
+
+
+
+template <class T>
+struct Count
+{
+ T value;
+};
+
+
+
+
+union HeaderUnion
+{
+ StartStopRange<uint8_t> range8;
+ StartStopRange<uint16_t> range16;
+ Count<uint8_t> count8;
+ Count<uint16_t> count16;
+};
+
+
+
+
+class Header
+{
+public:
+
+ bool WriteTo(opendnp3::HeaderWriter& writer) const;
+
+
+
+
+ static Header AllObjects(uint8_t group, uint8_t variation);
+
+
+
+
+ static Header From(PointClass pc);
+
+
+
+
+ static Header Range8(uint8_t group, uint8_t variation, uint8_t start, uint8_t stop);
+
+
+
+
+ static Header Range16(uint8_t group, uint8_t variation, uint16_t start, uint16_t stop);
+
+
+
+
+ static Header Count8(uint8_t group, uint8_t variation, uint8_t count);
+
+
+
+
+ static Header Count16(uint8_t group, uint8_t variation, uint16_t count);
+
+ Header() {}
+
+private:
+
+ opendnp3::GroupVariationID id;
+ HeaderType type = HeaderType::AllObjects;
+ HeaderUnion value;
+
+ Header(uint8_t group, uint8_t var);
+
+ Header(uint8_t group, uint8_t var, uint8_t start, uint8_t stop);
+
+ Header(uint8_t group, uint8_t var, uint16_t start, uint16_t stop);
+
+ Header(uint8_t group, uint8_t var, uint8_t count);
+
+ Header(uint8_t group, uint8_t var, uint16_t count);
+};
+
+
+}
+# 22 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/opendnp3/master/HeaderTypes.cpp" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/GroupVariationRecord.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/GroupVariationRecord.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Uncopyable.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Uncopyable.h"
+namespace openpal
+{
+
+
+
+class Uncopyable
+{
+protected:
+ Uncopyable() {}
+ ~Uncopyable() {}
+
+private:
+
+ Uncopyable(const Uncopyable&) = delete;
+ Uncopyable& operator=(const Uncopyable&) = delete;
+};
+
+class StaticOnly
+{
+
+private:
+
+ StaticOnly() = delete;
+ StaticOnly(const StaticOnly&) = delete;
+ StaticOnly& operator=(const StaticOnly&) = delete;
+};
+
+}
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/GroupVariationRecord.h" 2
+
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/TimestampMode.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/TimestampMode.h"
+namespace opendnp3 {
+
+
+
+
+enum class TimestampMode : uint8_t
+{
+
+  SYNCHRONIZED = 1,
+
+  UNSYNCHRONIZED = 2,
+
+  INVALID = 0
+};
+
+
+}
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/GroupVariationRecord.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/GroupVariation.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/opendnp3/gen/GroupVariation.h"
+namespace opendnp3 {
+
+
+
+
+enum class GroupVariation : uint16_t
+{
+  Group1Var0 = 0x100,
+  Group1Var1 = 0x101,
+  Group1Var2 = 0x102,
+  Group2Var0 = 0x200,
+  Group2Var1 = 0x201,
+  Group2Var2 = 0x202,
+  Group2Var3 = 0x203,
+  Group3Var0 = 0x300,
+  Group3Var1 = 0x301,
+  Group3Var2 = 0x302,
+  Group4Var0 = 0x400,
+  Group4Var1 = 0x401,
+  Group4Var2 = 0x402,
+  Group4Var3 = 0x403,
+  Group10Var0 = 0xA00,
+  Group10Var1 = 0xA01,
+  Group10Var2 = 0xA02,
+  Group11Var0 = 0xB00,
+  Group11Var1 = 0xB01,
+  Group11Var2 = 0xB02,
+  Group12Var0 = 0xC00,
+  Group12Var1 = 0xC01,
+  Group13Var1 = 0xD01,
+  Group13Var2 = 0xD02,
+  Group20Var0 = 0x1400,
+  Group20Var1 = 0x1401,
+  Group20Var2 = 0x1402,
+  Group20Var5 = 0x1405,
+  Group20Var6 = 0x1406,
+  Group21Var0 = 0x1500,
+  Group21Var1 = 0x1501,
+  Group21Var2 = 0x1502,
+  Group21Var5 = 0x1505,
+  Group21Var6 = 0x1506,
+  Group21Var9 = 0x1509,
+  Group21Var10 = 0x150A,
+  Group22Var0 = 0x1600,
+  Group22Var1 = 0x1601,
+  Group22Var2 = 0x1602,
+  Group22Var5 = 0x1605,
+  Group22Var6 = 0x1606,
+  Group23Var0 = 0x1700,
+  Group23Var1 = 0x1701,
+  Group23Var2 = 0x1702,
+  Group23Var5 = 0x1705,
+  Group23Var6 = 0x1706,
+  Group30Var0 = 0x1E00,
+  Group30Var1 = 0x1E01,
+  Group30Var2 = 0x1E02,
+  Group30Var3 = 0x1E03,
+  Group30Var4 = 0x1E04,
+  Group30Var5 = 0x1E05,
+  Group30Var6 = 0x1E06,
+  Group32Var0 = 0x2000,
+  Group32Var1 = 0x2001,
+  Group32Var2 = 0x2002,
+  Group32Var3 = 0x2003,
+  Group32Var4 = 0x2004,
+  Group32Var5 = 0x2005,
+  Group32Var6 = 0x2006,
+  Group32Var7 = 0x2007,
+  Group32Var8 = 0x2008,
+  Group40Var0 = 0x2800,
+  Group40Var1 = 0x2801,
+  Group40Var2 = 0x2802,
+  Group40Var3 = 0x2803,
+  Group40Var4 = 0x2804,
+  Group41Var0 = 0x2900,
+  Group41Var1 = 0x2901,
+  Group41Var2 = 0x2902,
+  Group41Var3 = 0x2903,
+  Group41Var4 = 0x2904,
+  Group42Var0 = 0x2A00,
+  Group42Var1 = 0x2A01,
+  Group42Var2 = 0x2A02,
+  Group42Var3 = 0x2A03,
+  Group42Var4 = 0x2A04,
+  Group42Var5 = 0x2A05,
+  Group42Var6 = 0x2A06,
+  Group42Var7 = 0x2A07,
+  Group42Var8 = 0x2A08,
+  Group43Var1 = 0x2B01,
+  Group43Var2 = 0x2B02,
+  Group43Var3 = 0x2B03,
+  Group43Var4 = 0x2B04,
+  Group43Var5 = 0x2B05,
+  Group43Var6 = 0x2B06,
+  Group43Var7 = 0x2B07,
+  Group43Var8 = 0x2B08,
+  Group50Var1 = 0x3201,
+  Group50Var4 = 0x3204,
+  Group51Var1 = 0x3301,
+  Group51Var2 = 0x3302,
+  Group52Var1 = 0x3401,
+  Group52Var2 = 0x3402,
+  Group60Var1 = 0x3C01,
+  Group60Var2 = 0x3C02,
+  Group60Var3 = 0x3C03,
+  Group60Var4 = 0x3C04,
+  Group70Var1 = 0x4601,
+  Group70Var2 = 0x4602,
+  Group70Var3 = 0x4603,
+  Group70Var4 = 0x4604,
+  Group70Var5 = 0x4605,
+  Group70Var6 = 0x4606,
+  Group70Var7 = 0x4607,
+  Group70Var8 = 0x4608,
+  Group80Var1 = 0x5001,
+  Group110Var0 = 0x6E00,
+  Group111Var0 = 0x6F00,
+  Group112Var0 = 0x7000,
+  Group113Var0 = 0x7100,
+  Group120Var1 = 0x7801,
+  Group120Var2 = 0x7802,
+  Group120Var3 = 0x7803,
+  Group120Var4 = 0x7804,
+  Group120Var5 = 0x7805,
+  Group120Var6 = 0x7806,
+  Group120Var7 = 0x7807,
+  Group120Var8 = 0x7808,
+  Group120Var9 = 0x7809,
+  Group120Var10 = 0x780A,
+  Group120Var11 = 0x780B,
+  Group120Var12 = 0x780C,
+  Group120Var13 = 0x780D,
+  Group120Var14 = 0x780E,
+  Group120Var15 = 0x780F,
+  Group121Var0 = 0x7900,
+  Group121Var1 = 0x7901,
+  Group122Var0 = 0x7A00,
+  Group122Var1 = 0x7A01,
+  Group122Var2 = 0x7A02,
+  UNKNOWN = 0xFFFF
+};
+
+uint16_t GroupVariationToType(GroupVariation arg);
+GroupVariation GroupVariationFromType(uint16_t arg);
+char const* GroupVariationToString(GroupVariation arg);
+
+}
+# 31 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/GroupVariationRecord.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/Range.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/Range.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h" 1
+# 34 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h"
+namespace openpal
+{
+namespace sizes
+{
+
+static const uint16_t MAX_ERASURE_SIZE = 12 * sizeof(void*);
+
+}
+}
+# 78 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h"
+# 1 "/usr/include/c++/15/new" 1 3
+# 43 "/usr/include/c++/15/new" 3
+# 1 "/usr/include/c++/15/bits/exception.h" 1 3
+# 40 "/usr/include/c++/15/bits/exception.h" 3
+
+# 40 "/usr/include/c++/15/bits/exception.h" 3
+extern "C++" {
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 61 "/usr/include/c++/15/bits/exception.h" 3
+  class exception
+  {
+  public:
+    exception() noexcept { }
+    virtual ~exception() noexcept;
+
+    exception(const exception&) = default;
+    exception& operator=(const exception&) = default;
+    exception(exception&&) = default;
+    exception& operator=(exception&&) = default;
+
+
+
+
+    virtual const char*
+    what() const noexcept;
+  };
+
+
+
+}
+
+}
+# 44 "/usr/include/c++/15/new" 2 3
+
+
+
+
+
+# 1 "/usr/include/c++/15/bits/version.h" 1 3
+# 50 "/usr/include/c++/15/new" 2 3
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wc++11-extensions"
+
+#pragma GCC visibility push(default)
+
+extern "C++" {
+
+namespace std
+{
+
+
+
+
+
+
+  class bad_alloc : public exception
+  {
+  public:
+    bad_alloc() throw() { }
+
+
+    bad_alloc(const bad_alloc&) = default;
+    bad_alloc& operator=(const bad_alloc&) = default;
+
+
+
+
+    virtual ~bad_alloc() throw();
+
+
+    virtual const char* what() const throw();
+  };
+
+
+  class bad_array_new_length : public bad_alloc
+  {
+  public:
+    bad_array_new_length() throw() { }
+
+
+
+    virtual ~bad_array_new_length() throw();
+
+
+    virtual const char* what() const throw();
+  };
+
+
+
+
+
+
+  struct nothrow_t
+  {
+
+    explicit nothrow_t() = default;
+
+  };
+
+  extern const nothrow_t nothrow;
+
+
+
+  typedef void (*new_handler)();
+
+
+
+  new_handler set_new_handler(new_handler) throw();
+
+
+
+  new_handler get_new_handler() noexcept;
+
+}
+# 137 "/usr/include/c++/15/new" 3
+[[__nodiscard__]] void* operator new(std::size_t)
+ 
+  __attribute__((__externally_visible__, __malloc__));
+[[__nodiscard__]] void* operator new[](std::size_t)
+ 
+  __attribute__((__externally_visible__, __malloc__));
+void operator delete(void*) noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*) noexcept
+  __attribute__((__externally_visible__));
+
+void operator delete(void*, std::size_t)
+  noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*, std::size_t)
+  noexcept
+  __attribute__((__externally_visible__));
+
+[[__nodiscard__]] void* operator new(std::size_t, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__, __alloc_size__ (1), __malloc__));
+[[__nodiscard__]] void* operator new[](std::size_t, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__, __alloc_size__ (1), __malloc__));
+void operator delete(void*, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__));
+void operator delete[](void*, const std::nothrow_t&)
+  noexcept
+  __attribute__((__externally_visible__));
+# 205 "/usr/include/c++/15/new" 3
+[[__nodiscard__]] inline
+void* operator new(std::size_t, void* __p)
+  noexcept
+{ return __p; }
+[[__nodiscard__]] inline
+void* operator new[](std::size_t, void* __p)
+  noexcept
+{ return __p; }
+
+
+
+
+inline void operator delete (void*, void*)
+  noexcept
+{ }
+inline void operator delete[](void*, void*)
+  noexcept
+{ }
+
+}
+
+namespace std
+{
+# 264 "/usr/include/c++/15/new" 3
+}
+
+#pragma GCC visibility pop
+#pragma GCC diagnostic pop
+# 79 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/Configure.h" 2
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/Range.h" 2
+
+# 1 "/usr/include/assert.h" 1 3 4
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/Range.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Comparisons.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Comparisons.h"
+
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Comparisons.h"
+namespace openpal
+{
+
+template <class T>
+inline T Min(T a, T b)
+{
+ return (a < b) ? a : b;
+}
+
+template <class T>
+inline T Max(T a, T b)
+{
+ return (a > b) ? a : b;
+}
+
+template <class T>
+inline T Bounded(T value, T min, T max)
+{
+ return Min(Max(value, min), max);
+}
+
+template <class T>
+inline bool WithinLimits(T value, T min, T max)
+{
+ return (value >= min) && (value <= max);
+}
+
+template <class T>
+bool FloatEqual(T a, T b, T eapllon = 1e-6)
+{
+ T diff = a - b;
+ if(diff < 0) diff = -diff;
+ return diff <= eapllon;
+}
+
+}
+# 29 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/Range.h" 2
+
+namespace opendnp3
+{
+
+class Range
+{
+public:
+
+ static Range From(uint16_t start, uint16_t stop)
+ {
+  return Range(start, stop);
+ }
+
+ static Range Invalid()
+ {
+  return Range(1, 0);
+ }
+
+ Range() : start(1), stop(0)
+ {}
+
+ uint32_t Count() const
+ {
+  return IsValid() ? (static_cast<uint32_t>(stop) - static_cast<uint32_t>(start) + 1) : 0;
+ }
+
+ bool Advance()
+ {
+  if (this->IsValid())
+  {
+   if (start < stop)
+   {
+    ++start;
+   }
+   else
+   {
+
+    start = 1;
+    stop = 0;
+   }
+
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
+
+
+ Range Intersection(const Range& other) const
+ {
+  return Range(
+             openpal::Max<uint16_t>(start, other.start),
+             openpal::Min<uint16_t>(stop, other.stop)
+         );
+ }
+
+
+ Range Union(const Range& other) const
+ {
+  return Range(
+             openpal::Min<uint16_t>(start, other.start),
+             openpal::Max<uint16_t>(stop, other.stop)
+         );
+ }
+
+ bool Equals(const Range& other) const
+ {
+  return (other.start == start) && (other.stop == stop);
+ }
+
+ bool IsValid() const
+ {
+  return start <= stop;
+ }
+
+ bool IsOneByte() const
+ {
+  return IsValid() && (start <= 255) && (stop <= 255);
+ }
+
+ uint16_t start;
+ uint16_t stop;
+
+private:
+
+ Range(uint16_t index_) :
+  start(index_),
+  stop(index_)
+ {}
+
+ Range(uint16_t start_, uint16_t stop_) :
+  start(start_),
+  stop(stop_)
+ {}
+};
+
+}
+# 33 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/GroupVariationRecord.h" 2
+
+
+namespace opendnp3
+{
+
+enum class GroupVariationType : int
+{
+ STATIC,
+ EVENT,
+ OTHER
+};
+
+struct EnumAndType
+{
+ EnumAndType(GroupVariation enumeration_, GroupVariationType type_) :
+  enumeration(enumeration_), type(type_)
+ {}
+
+ GroupVariation enumeration;
+ GroupVariationType type;
+};
+
+class GroupVariationRecord
+{
+
+public:
+
+ static EnumAndType GetEnumAndType(uint8_t group, uint8_t variation);
+
+ static uint16_t GetGroupVar(uint8_t group, uint8_t variation);
+
+ static GroupVariationRecord GetRecord(uint8_t group, uint8_t variation);
+
+ static GroupVariationType GetType(uint8_t group, uint8_t variation);
+
+ GroupVariationRecord(uint8_t group_, uint8_t variation_, GroupVariation enumeration_, GroupVariationType type_);
+
+ GroupVariationRecord() : enumeration(GroupVariation::UNKNOWN), type(GroupVariationType::OTHER), group(0), variation(0)
+ {}
+
+ GroupVariation enumeration;
+ GroupVariationType type;
+ uint8_t group;
+ uint8_t variation;
+};
+
+class HeaderRecord : public GroupVariationRecord
+{
+public:
+
+ HeaderRecord() : qualifier(0), headerIndex(0)
+ {}
+
+ HeaderRecord(const GroupVariationRecord& gv, uint8_t qualifier, uint32_t headerIndex);
+
+ QualifierCode GetQualifierCode() const;
+
+ uint8_t qualifier;
+ uint32_t headerIndex;
+};
+
+
+
+class AllObjectsHeader : public HeaderRecord
+{
+public:
+
+ explicit AllObjectsHeader(const HeaderRecord& record) : HeaderRecord(record)
+ {}
+
+};
+
+class CountHeader : public HeaderRecord
+{
+public:
+
+ CountHeader(const HeaderRecord& record, uint16_t count_) : HeaderRecord(record), count(count_)
+ {}
+
+ uint16_t count;
+};
+
+class FreeFormatHeader : public HeaderRecord
+{
+public:
+
+ FreeFormatHeader(const HeaderRecord& record, uint16_t count_) : HeaderRecord(record), count(count_)
+ {}
+
+ uint16_t count;
+};
+
+class RangeHeader : public HeaderRecord
+{
+public:
+
+ RangeHeader(const HeaderRecord& record, const Range& range_) : HeaderRecord(record), range(range_)
+ {}
+
+ Range range;
+};
+
+class PrefixHeader : public HeaderRecord
+{
+public:
+
+ PrefixHeader(const HeaderRecord& record, uint16_t count_) : HeaderRecord(record), count(count_)
+ {}
+
+ uint16_t count;
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/IVariableLength.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/IVariableLength.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/WSlice.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/WSlice.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/HasSize.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/HasSize.h"
+namespace openpal
+{
+
+template <class SizeType>
+class HasSize
+{
+
+public:
+
+ HasSize(SizeType size_) : size(size_)
+ {}
+
+ SizeType Size() const
+ {
+  return size;
+ }
+
+ bool IsEmpty() const
+ {
+  return size == 0;
+ }
+
+ bool IsNotEmpty() const
+ {
+  return size != 0;
+ }
+
+protected:
+
+ SizeType size;
+
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/WSlice.h" 2
+
+
+
+namespace openpal
+{
+
+class RSlice;
+
+
+
+
+
+class WSlice : public HasSize<uint32_t>
+{
+public:
+
+ static WSlice Empty();
+
+ void SetAllTo(uint8_t value);
+
+ WSlice();
+ WSlice(uint8_t* pBuffer, uint32_t size);
+
+ void Clear();
+
+ uint32_t Advance(uint32_t count);
+
+ WSlice Skip(uint32_t count) const;
+
+ RSlice ToRSlice() const;
+
+ operator uint8_t* ()
+ {
+  return pBuffer;
+ };
+
+ operator uint8_t const* () const
+ {
+  return pBuffer;
+ };
+
+private:
+
+ uint8_t* pBuffer;
+};
+
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/IVariableLength.h" 2
+
+
+
+namespace opendnp3
+{
+
+class IVariableLength
+{
+
+public:
+
+ virtual ~IVariableLength() {}
+
+ virtual GroupVariationID InstanceID() const = 0;
+
+
+ virtual uint32_t Size() const = 0;
+
+
+ virtual bool Write(openpal::WSlice& dest) const = 0;
+
+
+ virtual bool Read(const openpal::RSlice& input) = 0;
+
+};
+
+}
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/RangeWriteIterator.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/RangeWriteIterator.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Format.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Format.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48Type.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48Type.h"
+namespace openpal
+{
+
+class UInt48Type
+{
+
+public:
+
+ explicit UInt48Type(int64_t value) : value(value)
+ {}
+
+ UInt48Type() : value(0)
+ {}
+
+ operator int64_t() const
+ {
+  return value;
+ }
+
+ int64_t value;
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Format.h" 2
+
+
+
+namespace openpal
+{
+class Format : private StaticOnly
+{
+public:
+
+ static bool Write(WSlice& dest, const uint8_t& value);
+ static bool Write(WSlice& dest, const uint16_t& value);
+
+ static bool Write(WSlice& dest, const uint32_t& value);
+ static bool Write(WSlice& dest, const UInt48Type& value);
+
+ static bool Write(WSlice& dest, const int16_t& value);
+ static bool Write(WSlice& dest, const int32_t& value);
+
+ static bool Write(WSlice& dest, const double& value);
+ static bool Write(WSlice& dest, const float& value);
+
+ template <typename T, typename... Args>
+ static bool Many(WSlice& dest, const T& value, const Args& ... args)
+ {
+  return Write(dest, value) && Many(dest, args...);
+ }
+
+private:
+
+ static bool Many(WSlice& input)
+ {
+  return true;
+ }
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/RangeWriteIterator.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serializer.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serializer.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/RSlice.h" 1
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/RSlice.h"
+namespace openpal
+{
+
+class WSlice;
+
+
+
+
+
+class RSlice : public HasSize<uint32_t>
+{
+
+public:
+
+ static RSlice Empty();
+
+ RSlice();
+
+ RSlice(uint8_t const* pBuffer, uint32_t size);
+
+ void Clear();
+
+ RSlice CopyTo(WSlice&) const;
+
+ RSlice Take(uint32_t count) const;
+
+ RSlice Skip(uint32_t count) const;
+
+ bool Equals(const RSlice& rhs) const;
+
+ void Advance(uint32_t count);
+
+ operator uint8_t const* () const
+ {
+  return pBuffer;
+ };
+
+private:
+ uint8_t const* pBuffer;
+
+};
+
+}
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serializer.h" 2
+
+
+namespace openpal
+{
+
+template <class T>
+class Serializer
+{
+public:
+
+ typedef bool (*ReadFunc)(RSlice& buffer, T& output);
+ typedef bool (*WriteFunc)(const T& value, WSlice& buffer);
+
+ Serializer() : size(0), pReadFunc(nullptr), pWriteFunc(nullptr)
+ {}
+
+ Serializer(uint32_t size_, ReadFunc pReadFunc_, WriteFunc pWriteFunc_) :
+  size(size_), pReadFunc(pReadFunc_), pWriteFunc(pWriteFunc_)
+ {}
+
+
+
+
+ uint32_t Size() const
+ {
+  return size;
+ }
+
+
+
+
+ bool Read(RSlice& buffer, T& output) const
+ {
+  return (*pReadFunc)(buffer, output);
+ }
+
+
+
+
+ bool Write(const T& value, WSlice& buffer) const
+ {
+  return (*pWriteFunc)(value, buffer);
+ }
+
+private:
+
+ uint32_t size;
+ ReadFunc pReadFunc;
+ WriteFunc pWriteFunc;
+
+};
+
+}
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/RangeWriteIterator.h" 2
+
+namespace opendnp3
+{
+
+
+template <class IndexType, class WriteType>
+class RangeWriteIterator
+{
+public:
+
+ static RangeWriteIterator Null()
+ {
+  return RangeWriteIterator();
+ }
+
+ RangeWriteIterator() : start(0), count(0), isValid(false), pPosition(nullptr)
+ {}
+
+ RangeWriteIterator(typename IndexType::Type start_, const openpal::Serializer<WriteType>& serializer_, openpal::WSlice& position) :
+  start(start_),
+  serializer(serializer_),
+  count(0),
+  isValid(position.Size() >= 2 * IndexType::SIZE),
+  range(position),
+  pPosition(&position)
+ {
+  if (isValid)
+  {
+   openpal::Format::Write(range, start);
+   pPosition->Advance(2 * IndexType::SIZE);
+  }
+ }
+
+ ~RangeWriteIterator()
+ {
+  if (isValid && count > 0)
+  {
+   auto stop = start + count - 1;
+   IndexType::Write(range, static_cast<typename IndexType::Type>(stop));
+  }
+ }
+
+ bool Write(const WriteType& value)
+ {
+  if (isValid && (pPosition->Size() >= serializer.Size()) && (count <= IndexType::Max))
+  {
+   serializer.Write(value, *pPosition);
+   ++count;
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
+
+ bool IsValid() const
+ {
+  return isValid;
+ }
+
+private:
+
+ typename IndexType::Type start;
+ openpal::Serializer<WriteType> serializer;
+ uint32_t count;
+
+ bool isValid;
+
+ openpal::WSlice range;
+ openpal::WSlice* pPosition;
+};
+
+}
+# 29 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/CountWriteIterator.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/CountWriteIterator.h"
+namespace opendnp3
+{
+
+
+template <class CountType, class WriteType>
+class CountWriteIterator
+{
+public:
+
+ static CountWriteIterator Null()
+ {
+  return CountWriteIterator();
+ }
+
+ CountWriteIterator() : count(0), isValid(false), pPosition(nullptr)
+ {}
+
+ CountWriteIterator(const openpal::Serializer<WriteType>& serializer_, openpal::WSlice& position) :
+  count(0),
+  serializer(serializer_),
+  isValid(position.Size() >= CountType::SIZE),
+  countPosition(position),
+  pPosition(&position)
+ {
+  if(isValid)
+  {
+   position.Advance(CountType::SIZE);
+  }
+ }
+
+ ~CountWriteIterator()
+ {
+  if (isValid)
+  {
+   openpal::Format::Write(countPosition, count);
+  }
+ }
+
+ bool Write(const WriteType& value)
+ {
+  if (isValid && (serializer.Size() <= pPosition->Size()) && (count < CountType::Max))
+  {
+   serializer.Write(value, *this->pPosition);
+   ++count;
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
+
+ bool IsValid() const
+ {
+  return isValid;
+ }
+
+private:
+
+ typename CountType::Type count;
+ openpal::Serializer<WriteType> serializer;
+
+ bool isValid;
+
+ openpal::WSlice countPosition;
+ openpal::WSlice* pPosition;
+};
+
+}
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/PrefixedWriteIterator.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/PrefixedWriteIterator.h"
+namespace opendnp3
+{
+
+
+template <class PrefixType, class WriteType>
+class PrefixedWriteIterator
+{
+public:
+
+ static PrefixedWriteIterator Null()
+ {
+  return PrefixedWriteIterator();
+ }
+
+ PrefixedWriteIterator() :
+  sizeOfTypePlusIndex(0),
+  count(0),
+  isValid(false),
+  pPosition(nullptr)
+ {}
+
+ PrefixedWriteIterator(const openpal::Serializer<WriteType>& serializer_, openpal::WSlice& position) :
+  serializer(serializer_),
+  sizeOfTypePlusIndex(serializer.Size() + PrefixType::SIZE),
+  count(0),
+  isValid(position.Size() >= PrefixType::SIZE),
+  countPosition(position),
+  pPosition(&position)
+ {
+  if(isValid)
+  {
+   pPosition->Advance(PrefixType::SIZE);
+  }
+ }
+
+ ~PrefixedWriteIterator()
+ {
+  if (isValid)
+  {
+   PrefixType::Write(countPosition, count);
+  }
+ }
+
+ bool Write(const WriteType& value, typename PrefixType::Type index)
+ {
+  if (isValid && (pPosition->Size() >= sizeOfTypePlusIndex))
+  {
+   PrefixType::WriteBuffer(*pPosition, index);
+   serializer.Write(value, *pPosition);
+   ++count;
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
+
+ bool IsValid() const
+ {
+  return isValid;
+ }
+
+private:
+
+ openpal::Serializer<WriteType> serializer;
+ uint32_t sizeOfTypePlusIndex;
+
+ typename PrefixType::Type count;
+
+ bool isValid;
+
+ openpal::WSlice countPosition;
+ openpal::WSlice* pPosition;
+};
+
+}
+# 31 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/BitfieldRangeWriteIterator.h" 1
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/BitfieldRangeWriteIterator.h"
+namespace opendnp3
+{
+
+
+template <class IndexType>
+class BitfieldRangeWriteIterator
+{
+public:
+
+ static BitfieldRangeWriteIterator Null()
+ {
+  auto buffer = openpal::WSlice::Empty();
+  return BitfieldRangeWriteIterator(0, buffer);
+ }
+
+ BitfieldRangeWriteIterator(typename IndexType::Type start_, openpal::WSlice& position_) :
+  start(start_),
+  count(0),
+  maxCount(0),
+  isValid(position_.Size() >= (2 * IndexType::SIZE)),
+  range(position_),
+  pPosition(&position_)
+ {
+  if(isValid)
+  {
+   openpal::Format::Write(range, start_);
+   pPosition->Advance(2 * IndexType::SIZE);
+   maxCount = pPosition->Size() * 8;
+  }
+ }
+
+ ~BitfieldRangeWriteIterator()
+ {
+  if (isValid && count > 0)
+  {
+   typename IndexType::Type stop = start + count - 1;
+   openpal::Format::Write(range, stop);
+
+   auto num = count / 8;
+
+   if ((count % 8) > 0)
+   {
+    ++num;
+   }
+
+   pPosition->Advance(num);
+  }
+ }
+
+ bool Write(bool value)
+ {
+  if (isValid && count < maxCount)
+  {
+   auto byte = count / 8;
+   auto bit = count % 8;
+
+   if (bit == 0)
+   {
+    (*pPosition)[byte] = 0;
+   }
+
+   if (value)
+   {
+    (*pPosition)[byte] = ((*pPosition)[byte] | (1 << bit));
+   }
+
+   ++count;
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
+
+ bool IsValid() const
+ {
+  return isValid;
+ }
+
+private:
+
+ typename IndexType::Type start;
+ typename IndexType::Type count;
+
+ uint32_t maxCount;
+
+ bool isValid;
+
+ openpal::WSlice range;
+ openpal::WSlice* pPosition;
+};
+
+}
+# 32 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/DNP3Serializer.h" 1
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/DNP3Serializer.h"
+namespace opendnp3
+{
+
+template <class T>
+class DNP3Serializer : public openpal::Serializer<T>
+{
+public:
+
+ DNP3Serializer(GroupVariationID id_, uint32_t size_, typename openpal::Serializer<T>::ReadFunc pReadFunc_, typename openpal::Serializer<T>::WriteFunc pWriteFunc_) :
+  openpal::Serializer<T>(size_, pReadFunc_, pWriteFunc_),
+  id(id_)
+ {}
+
+ GroupVariationID ID() const
+ {
+  return id;
+ }
+
+private:
+
+ GroupVariationID id;
+
+};
+
+}
+# 34 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Settable.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/container/Settable.h"
+namespace openpal
+{
+
+
+template <class T>
+class Settable
+{
+public:
+
+ Settable() : valueIsSet(false)
+ {}
+
+ bool IsSet() const
+ {
+  return valueIsSet;
+ }
+
+ bool IsEmpty() const
+ {
+  return !valueIsSet;
+ }
+
+ T Get() const
+ {
+  return value;
+ }
+
+ bool Pop(T& output)
+ {
+  if (valueIsSet)
+  {
+   valueIsSet = false;
+   output = value;
+   return true;
+  }
+  else
+  {
+   return false;
+  }
+ }
+
+ void Clear()
+ {
+  valueIsSet = false;
+ }
+
+ void Set(const T& value_)
+ {
+  value = value_;
+  valueIsSet = true;
+ }
+
+ template <class Action>
+ bool IsSetAnd(Action action);
+
+ template <class Action>
+ void Foreach(Action action);
+
+
+private:
+
+ bool valueIsSet;
+ T value;
+};
+
+template <class T>
+template <class Action>
+bool Settable<T>::IsSetAnd(Action action)
+{
+ if (valueIsSet)
+ {
+  return action(value);
+ }
+ else
+ {
+  return false;
+ }
+}
+
+template <class T>
+template <class Action>
+void Settable<T>::Foreach(Action action)
+{
+ if (valueIsSet)
+ {
+  action(value);
+ }
+}
+
+}
+# 37 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48LE.h" 1
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48LE.h"
+# 1 "/usr/include/c++/15/cstring" 1 3
+# 47 "/usr/include/c++/15/cstring" 3
+# 1 "/usr/include/c++/15/bits/version.h" 1 3
+# 48 "/usr/include/c++/15/cstring" 2 3
+# 1 "/usr/include/string.h" 1 3 4
+# 26 "/usr/include/string.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/string.h" 2 3 4
+
+
+# 28 "/usr/include/string.h" 3 4
+extern "C" {
+
+
+
+
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 1 3 4
+# 229 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 34 "/usr/include/string.h" 2 3 4
+# 43 "/usr/include/string.h" 3 4
+extern void *memcpy (void *__restrict __dest, const void *__restrict __src,
+       size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void *memmove (void *__dest, const void *__src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+extern void *memccpy (void *__restrict __dest, const void *__restrict __src,
+        int __c, size_t __n)
+    noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 4)));
+
+
+
+
+extern void *memset (void *__s, int __c, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+extern int memcmp (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 80 "/usr/include/string.h" 3 4
+extern int __memcmpeq (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern "C++"
+{
+extern void *memchr (void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const void *memchr (const void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) void *
+memchr (void *__s, int __c, size_t __n) noexcept (true)
+{
+  return __builtin_memchr (__s, __c, __n);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const void *
+memchr (const void *__s, int __c, size_t __n) noexcept (true)
+{
+  return __builtin_memchr (__s, __c, __n);
+}
+
+}
+# 115 "/usr/include/string.h" 3 4
+extern "C++" void *rawmemchr (void *__s, int __c)
+     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern "C++" const void *rawmemchr (const void *__s, int __c)
+     noexcept (true) __asm ("rawmemchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+
+extern "C++" void *memrchr (void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
+      __attribute__ ((__access__ (__read_only__, 1, 3)));
+extern "C++" const void *memrchr (const void *__s, int __c, size_t __n)
+      noexcept (true) __asm ("memrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)))
+      __attribute__ ((__access__ (__read_only__, 1, 3)));
+# 141 "/usr/include/string.h" 3 4
+extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncpy (char *__restrict __dest,
+        const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strcat (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+extern char *strncat (char *__restrict __dest, const char *__restrict __src,
+        size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strcoll (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern size_t strxfrm (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+    noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+};
+
+typedef struct __locale_struct *__locale_t;
+# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
+
+typedef __locale_t locale_t;
+# 173 "/usr/include/string.h" 2 3 4
+
+
+extern int strcoll_l (const char *__s1, const char *__s2, locale_t __l)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+
+extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+    locale_t __l) noexcept (true) __attribute__ ((__nonnull__ (2, 4)))
+     __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+
+
+extern char *strdup (const char *__s)
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+
+
+extern char *strndup (const char *__string, size_t __n)
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__nonnull__ (1)));
+# 224 "/usr/include/string.h" 3 4
+extern "C++"
+{
+extern char *strchr (char *__s, int __c)
+     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *strchr (const char *__s, int __c)
+     noexcept (true) __asm ("strchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strchr (char *__s, int __c) noexcept (true)
+{
+  return __builtin_strchr (__s, __c);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strchr (const char *__s, int __c) noexcept (true)
+{
+  return __builtin_strchr (__s, __c);
+}
+
+}
+
+
+
+
+
+
+extern "C++"
+{
+extern char *strrchr (char *__s, int __c)
+     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *strrchr (const char *__s, int __c)
+     noexcept (true) __asm ("strrchr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strrchr (char *__s, int __c) noexcept (true)
+{
+  return __builtin_strrchr (__s, __c);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strrchr (const char *__s, int __c) noexcept (true)
+{
+  return __builtin_strrchr (__s, __c);
+}
+
+}
+# 281 "/usr/include/string.h" 3 4
+extern "C++" char *strchrnul (char *__s, int __c)
+     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern "C++" const char *strchrnul (const char *__s, int __c)
+     noexcept (true) __asm ("strchrnul") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+# 293 "/usr/include/string.h" 3 4
+extern size_t strcspn (const char *__s, const char *__reject)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern size_t strspn (const char *__s, const char *__accept)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern "C++"
+{
+extern char *strpbrk (char *__s, const char *__accept)
+     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern const char *strpbrk (const char *__s, const char *__accept)
+     noexcept (true) __asm ("strpbrk") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strpbrk (char *__s, const char *__accept) noexcept (true)
+{
+  return __builtin_strpbrk (__s, __accept);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strpbrk (const char *__s, const char *__accept) noexcept (true)
+{
+  return __builtin_strpbrk (__s, __accept);
+}
+
+}
+
+
+
+
+
+
+extern "C++"
+{
+extern char *strstr (char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern const char *strstr (const char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strstr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+strstr (char *__haystack, const char *__needle) noexcept (true)
+{
+  return __builtin_strstr (__haystack, __needle);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+strstr (const char *__haystack, const char *__needle) noexcept (true)
+{
+  return __builtin_strstr (__haystack, __needle);
+}
+
+}
+
+
+
+
+
+
+
+extern char *strtok (char *__restrict __s, const char *__restrict __delim)
+     noexcept (true) __attribute__ ((__nonnull__ (2)));
+
+
+
+extern char *__strtok_r (char *__restrict __s,
+    const char *__restrict __delim,
+    char **__restrict __save_ptr)
+     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+
+extern char *strtok_r (char *__restrict __s, const char *__restrict __delim,
+         char **__restrict __save_ptr)
+     noexcept (true) __attribute__ ((__nonnull__ (2, 3)));
+
+
+
+
+
+extern "C++" char *strcasestr (char *__haystack, const char *__needle)
+     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+extern "C++" const char *strcasestr (const char *__haystack,
+         const char *__needle)
+     noexcept (true) __asm ("strcasestr") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+# 389 "/usr/include/string.h" 3 4
+extern void *memmem (const void *__haystack, size_t __haystacklen,
+       const void *__needle, size_t __needlelen)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 3)))
+    __attribute__ ((__access__ (__read_only__, 1, 2)))
+    __attribute__ ((__access__ (__read_only__, 3, 4)));
+
+
+
+extern void *__mempcpy (void *__restrict __dest,
+   const void *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern void *mempcpy (void *__restrict __dest,
+        const void *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern size_t strlen (const char *__s)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern size_t strnlen (const char *__string, size_t __maxlen)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+
+
+extern char *strerror (int __errnum) noexcept (true);
+# 444 "/usr/include/string.h" 3 4
+extern char *strerror_r (int __errnum, char *__buf, size_t __buflen)
+     noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2, 3)));
+
+
+
+
+extern const char *strerrordesc_np (int __err) noexcept (true);
+
+extern const char *strerrorname_np (int __err) noexcept (true);
+
+
+
+
+
+extern char *strerror_l (int __errnum, locale_t __l) noexcept (true);
+
+
+
+# 1 "/usr/include/strings.h" 1 3 4
+# 23 "/usr/include/strings.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 1 3 4
+# 24 "/usr/include/strings.h" 2 3 4
+
+
+
+
+
+
+extern "C" {
+
+
+
+extern int bcmp (const void *__s1, const void *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bcopy (const void *__src, void *__dest, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern void bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+
+extern "C++"
+{
+extern char *index (char *__s, int __c)
+     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *index (const char *__s, int __c)
+     noexcept (true) __asm ("index") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+index (char *__s, int __c) noexcept (true)
+{
+  return __builtin_index (__s, __c);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+index (const char *__s, int __c) noexcept (true)
+{
+  return __builtin_index (__s, __c);
+}
+
+}
+
+
+
+
+
+
+
+extern "C++"
+{
+extern char *rindex (char *__s, int __c)
+     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+extern const char *rindex (const char *__s, int __c)
+     noexcept (true) __asm ("rindex") __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1)));
+
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) char *
+rindex (char *__s, int __c) noexcept (true)
+{
+  return __builtin_rindex (__s, __c);
+}
+
+extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) const char *
+rindex (const char *__s, int __c) noexcept (true)
+{
+  return __builtin_rindex (__s, __c);
+}
+
+}
+# 104 "/usr/include/strings.h" 3 4
+extern int ffs (int __i) noexcept (true) __attribute__ ((__const__));
+
+
+
+
+
+extern int ffsl (long int __l) noexcept (true) __attribute__ ((__const__));
+__extension__ extern int ffsll (long long int __ll)
+     noexcept (true) __attribute__ ((__const__));
+
+
+
+extern int strcasecmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+
+
+extern int strcasecmp_l (const char *__s1, const char *__s2, locale_t __loc)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 3)));
+
+
+
+extern int strncasecmp_l (const char *__s1, const char *__s2,
+     size_t __n, locale_t __loc)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2, 4)));
+
+
+}
+# 463 "/usr/include/string.h" 2 3 4
+
+
+
+extern void explicit_bzero (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
+    __attribute__ ((__access__ (__write_only__, 1, 2)));
+
+
+
+extern char *strsep (char **__restrict __stringp,
+       const char *__restrict __delim)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern char *strsignal (int __sig) noexcept (true);
+
+
+
+extern const char *sigabbrev_np (int __sig) noexcept (true);
+
+
+extern const char *sigdescr_np (int __sig) noexcept (true);
+
+
+
+extern char *__stpcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpcpy (char *__restrict __dest, const char *__restrict __src)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern char *__stpncpy (char *__restrict __dest,
+   const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+extern char *stpncpy (char *__restrict __dest,
+        const char *__restrict __src, size_t __n)
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+
+extern size_t strlcpy (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__write_only__, 1, 3)));
+
+
+
+extern size_t strlcat (char *__restrict __dest,
+         const char *__restrict __src, size_t __n)
+  noexcept (true) __attribute__ ((__nonnull__ (1, 2))) __attribute__ ((__access__ (__read_write__, 1, 3)));
+
+
+
+
+extern int strverscmp (const char *__s1, const char *__s2)
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern char *strfry (char *__string) noexcept (true) __attribute__ ((__nonnull__ (1)));
+
+
+extern void *memfrob (void *__s, size_t __n) noexcept (true) __attribute__ ((__nonnull__ (1)))
+    __attribute__ ((__access__ (__read_write__, 1, 2)));
+
+
+
+
+
+
+
+extern "C++" char *basename (char *__filename)
+     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
+extern "C++" const char *basename (const char *__filename)
+     noexcept (true) __asm ("basename") __attribute__ ((__nonnull__ (1)));
+# 552 "/usr/include/string.h" 3 4
+}
+# 49 "/usr/include/c++/15/cstring" 2 3
+# 74 "/usr/include/c++/15/cstring" 3
+extern "C++"
+{
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  using ::memchr;
+  using ::memcmp;
+  using ::memcpy;
+  using ::memmove;
+  using ::memset;
+  using ::strcat;
+  using ::strcmp;
+  using ::strcoll;
+  using ::strcpy;
+  using ::strcspn;
+  using ::strerror;
+  using ::strlen;
+  using ::strncat;
+  using ::strncmp;
+  using ::strncpy;
+  using ::strspn;
+
+  using ::strtok;
+
+  using ::strxfrm;
+  using ::strchr;
+  using ::strpbrk;
+  using ::strrchr;
+  using ::strstr;
+# 127 "/usr/include/c++/15/cstring" 3
+
+}
+}
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48LE.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48Type.h" 1
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48LE.h" 2
+
+
+
+
+
+# 32 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/UInt48LE.h"
+namespace openpal
+{
+
+class UInt48LE
+{
+public:
+
+ static UInt48Type Read(const uint8_t* data);
+
+ static void Write(uint8_t* data, UInt48Type value);
+
+ inline static UInt48Type ReadBuffer(RSlice& buffer)
+ {
+  auto ret = Read(buffer);
+  buffer.Advance(SIZE);
+  return ret;
+ }
+
+ static void WriteBuffer(WSlice& buffer, UInt48Type value)
+ {
+  Write(buffer, value);
+  buffer.Advance(SIZE);
+ }
+
+ const static int64_t MAX = 281474976710655ULL;
+ const static size_t SIZE = 6;
+ typedef UInt48Type Type;
+};
+
+}
+# 25 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SerializationTemplatesLE.h" 1
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SerializationTemplatesLE.h"
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Limits.h" 1
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/util/Limits.h"
+namespace openpal
+{
+
+template <class T>
+T MinValue();
+
+template <class T>
+T MaxValue();
+
+}
+# 31 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SerializationTemplatesLE.h" 2
+
+namespace openpal
+{
+
+template <class T>
+class Bit16LE
+{
+public:
+
+ static T Read(const uint8_t* data)
+ {
+  return (static_cast<T>(data[0]) << 0) | (static_cast<T>(data[1]) << 8);
+ }
+
+ static void Write(uint8_t* data, T value)
+ {
+  data[0] = static_cast<uint8_t>(value & 0xFF);
+  data[1] = static_cast<uint8_t>((value >> 8) & 0xFF);
+ }
+
+ static void WriteBuffer(WSlice& buffer, T aValue)
+ {
+  Write(buffer, aValue);
+  buffer.Advance(SIZE);
+ }
+
+ inline static T ReadBuffer(RSlice& arBuffer)
+ {
+  auto ret = Read(arBuffer);
+  arBuffer.Advance(SIZE);
+  return ret;
+ }
+
+ typedef T Type;
+
+ const static size_t SIZE = sizeof(T);
+ const static T Max;
+ const static T Min;
+};
+
+template <class T>
+const T Bit16LE<T>::Max = openpal::MaxValue<T>();
+
+template <class T>
+const T Bit16LE<T>::Min = openpal::MinValue<T>();
+
+template <class T>
+class Bit32LE
+{
+public:
+
+
+
+
+
+
+ static T Read(const uint8_t* data)
+ {
+  return (static_cast<T>(data[0]) << 0) |
+          (static_cast<T>(data[1]) << 8) |
+          (static_cast<T>(data[2]) << 16) |
+          (static_cast<T>(data[3]) << 24);
+ }
+
+ static void Write(uint8_t* data, T value)
+ {
+  data[0] = static_cast<uint8_t>(value & 0xFF);
+  data[1] = static_cast<uint8_t>((value >> 8) & 0xFF);
+  data[2] = static_cast<uint8_t>((value >> 16) & 0xFF);
+  data[3] = static_cast<uint8_t>((value >> 24) & 0xFF);
+ }
+
+ static void WriteBuffer(WSlice& buffer, T aValue)
+ {
+  Write(buffer, aValue);
+  buffer.Advance(SIZE);
+ }
+
+ inline static T ReadBuffer(RSlice& buffer)
+ {
+  auto ret = Read(buffer);
+  buffer.Advance(SIZE);
+  return ret;
+ }
+
+ typedef T Type;
+
+ const static size_t SIZE = sizeof(T);
+ const static T Max;
+ const static T Min;
+};
+
+template <class T>
+const T Bit32LE<T>::Max = openpal::MaxValue<T>();
+
+template <class T>
+const T Bit32LE<T>::Min = openpal::MinValue<T>();
+
+}
+# 26 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/ByteSerialization.h" 1
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/ByteSerialization.h"
+namespace openpal
+{
+
+class UInt8Simple
+{
+public:
+
+ inline static uint8_t Read(const uint8_t* pStart)
+ {
+  return (*pStart);
+ }
+
+ inline static uint8_t ReadBuffer(RSlice& buffer)
+ {
+  auto ret = Read(buffer);
+  buffer.Advance(SIZE);
+  return ret;
+ }
+
+ static void WriteBuffer(WSlice& buffer, uint8_t value)
+ {
+  Write(buffer, value);
+  buffer.Advance(SIZE);
+ }
+
+ inline static void Write(uint8_t* pStart, uint8_t value)
+ {
+  *(pStart) = value;
+ }
+
+ const static size_t SIZE = 1;
+ const static uint8_t Max;
+ const static uint8_t Min;
+
+ typedef uint8_t Type;
+};
+
+}
+# 27 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h" 2
+
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SingleFloat.h" 1
+# 28 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SingleFloat.h"
+# 1 "/usr/include/c++/15/cstddef" 1 3
+# 52 "/usr/include/c++/15/cstddef" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 1 3 4
+# 160 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 3 4
+
+# 160 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 3 4
+typedef long int ptrdiff_t;
+# 440 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+# 451 "/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h" 3 4
+} max_align_t;
+
+
+
+
+
+
+  typedef decltype(nullptr) nullptr_t;
+# 53 "/usr/include/c++/15/cstddef" 2 3
+
+
+# 1 "/usr/include/c++/15/bits/version.h" 1 3
+# 56 "/usr/include/c++/15/cstddef" 2 3
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+
+extern "C++"
+{
+
+namespace std
+{
+
+  using ::max_align_t;
+}
+# 195 "/usr/include/c++/15/cstddef" 3
+}
+
+#pragma GCC diagnostic pop
+# 29 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SingleFloat.h" 2
+
+
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/SingleFloat.h"
+namespace openpal
+{
+
+class SingleFloat : private StaticOnly
+{
+public:
+
+ static_assert(sizeof(float) == 4, "Unexpected size of single float");
+
+ typedef float Type;
+
+ static float ReadBuffer(RSlice& buffer);
+ static void WriteBuffer(WSlice& buffer, float value);
+
+ static float Read(const uint8_t* data);
+ static void Write(uint8_t* data, float value);
+
+ const static std::size_t SIZE = sizeof(float);
+ const static float Max;
+ const static float Min;
+};
+
+}
+# 29 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h" 2
+# 1 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/DoubleFloat.h" 1
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/DoubleFloat.h"
+namespace openpal
+{
+
+class DoubleFloat : private StaticOnly
+{
+public:
+
+ static_assert(sizeof(double) == 8, "Unexpected size of double float");
+
+ typedef double Type;
+
+ static double ReadBuffer(RSlice& buffer);
+ static void WriteBuffer(WSlice& buffer, double value);
+
+ static double Read(const uint8_t* data);
+ static void Write(uint8_t* data, double value);
+
+ const static std::size_t SIZE = sizeof(double);
+ const static double Max;
+ const static double Min;
+};
+
+}
+# 30 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/include/openpal/serialization/Serialization.h" 2
+
+namespace openpal
+{
+
+typedef Bit16LE<int16_t> Int16;
+typedef Bit16LE<uint16_t> UInt16;
+typedef Bit32LE<int32_t> Int32;
+typedef Bit32LE<uint32_t> UInt32;
+typedef UInt48LE UInt48;
+typedef UInt8Simple UInt8;
+
+
+}
+# 38 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/./cpp/libs/src/opendnp3/app/HeaderWriter.h" 2
+
+namespace opendnp3
+{
+
+
+class HeaderWriter
+{
+ friend class APDUWrapper;
+
+public:
+
+ bool WriteHeader(GroupVariationID id, QualifierCode qc);
+
+ template <class IndexType, class WriteType>
+ RangeWriteIterator<IndexType, WriteType> IterateOverRange(QualifierCode qc, const DNP3Serializer<WriteType>& serializer, typename IndexType::Type start);
+
+ template <class IndexType>
+ bool WriteRangeHeader(QualifierCode qc, GroupVariationID gvId, typename IndexType::Type start, typename IndexType::Type stop);
+
+ template <class IndexType>
+ bool WriteCountHeader(QualifierCode qc, GroupVariationID gvId, typename IndexType::Type count);
+
+ template <class CountType, class WriteType>
+ CountWriteIterator<CountType, WriteType> IterateOverCount(QualifierCode qc, const DNP3Serializer<WriteType>& serializer);
+
+ template <class IndexType>
+ BitfieldRangeWriteIterator<IndexType> IterateOverSingleBitfield(GroupVariationID id, QualifierCode qc, typename IndexType::Type start);
+
+ template <class CountType, class ValueType>
+ bool WriteSingleValue(QualifierCode qc, const DNP3Serializer<ValueType>& serializer, const ValueType&);
+
+ bool WriteFreeFormat(const IVariableLength&);
+
+ template <class CountType, class WriteType>
+ bool WriteSingleValue(QualifierCode qc, const WriteType&);
+
+ template <class CountType, class ValueType>
+ bool WriteSingleIndexedValue(QualifierCode qc, const DNP3Serializer<ValueType>& serializer, const ValueType&, typename CountType::Type index);
+
+ template <class PrefixType, class WriteType>
+ PrefixedWriteIterator<PrefixType, WriteType> IterateOverCountWithPrefix(QualifierCode qc, const DNP3Serializer<WriteType>& serializer);
+
+ template <class PrefixType, class WriteType, class CTOType>
+ PrefixedWriteIterator<PrefixType, WriteType> IterateOverCountWithPrefixAndCTO(QualifierCode qc, const DNP3Serializer<WriteType>& serializer, const CTOType& cto);
+
+
+
+ void Mark();
+
+
+ bool Rollback();
+
+ uint32_t Remaining() const;
+
+private:
+
+ explicit HeaderWriter(openpal::WSlice* position_);
+
+ bool WriteHeaderWithReserve(GroupVariationID id, QualifierCode qc, uint32_t reserve);
+
+ openpal::WSlice* position;
+
+ openpal::Settable<openpal::WSlice> mark;
+};
+
+template <class IndexType>
+bool HeaderWriter::WriteRangeHeader(QualifierCode qc, GroupVariationID gvId, typename IndexType::Type start, typename IndexType::Type stop)
+{
+ if (WriteHeaderWithReserve(gvId, qc, 2 * IndexType::SIZE))
+ {
+  IndexType::WriteBuffer(*position, start);
+  IndexType::WriteBuffer(*position, stop);
+  return true;
+ }
+ else
+ {
+  return false;
+ }
+}
+
+template <class IndexType>
+bool HeaderWriter::WriteCountHeader(QualifierCode qc, GroupVariationID gvId, typename IndexType::Type count)
+{
+ if (WriteHeaderWithReserve(gvId, qc, IndexType::SIZE))
+ {
+  IndexType::WriteBuffer(*position, count);
+  return true;
+ }
+ else
+ {
+  return false;
+ }
+}
+
+template <class CountType, class ValueType>
+bool HeaderWriter::WriteSingleValue(QualifierCode qc, const DNP3Serializer<ValueType>& serializer, const ValueType& value)
+{
+ auto reserveSize = CountType::SIZE + serializer.Size();
+ if(this->WriteHeaderWithReserve(ValueType::ID, qc, reserveSize))
+ {
+  CountType::WSlice(*position, 1);
+  serializer.Write(value, *position);
+  return true;
+ }
+ else return false;
+}
+
+template <class CountType, class WriteType>
+bool HeaderWriter::WriteSingleValue(QualifierCode qc, const WriteType& value)
+{
+ uint32_t reserveSize = CountType::SIZE + WriteType::Size();
+ if(this->WriteHeaderWithReserve(WriteType::ID(), qc, reserveSize))
+ {
+  CountType::WriteBuffer(*position, 1);
+  WriteType::Write(value, *position);
+  return true;
+ }
+ else
+ {
+  return false;
+ }
+}
+
+template <class CountType, class ValueType>
+bool HeaderWriter::WriteSingleIndexedValue(QualifierCode qc, const DNP3Serializer<ValueType>& serializer, const ValueType& value, typename CountType::Type index)
+{
+ uint32_t reserveSize = 2 * CountType::SIZE + serializer.Size();
+ if(this->WriteHeaderWithReserve(serializer.ID(), qc, reserveSize))
+ {
+  CountType::WriteBuffer(*position, 1);
+  CountType::WriteBuffer(*position, index);
+  serializer.Write(value, *position);
+  return true;
+ }
+ else return false;
+}
+
+template <class IndexType, class WriteType>
+RangeWriteIterator<IndexType, WriteType> HeaderWriter::IterateOverRange(QualifierCode qc, const DNP3Serializer<WriteType>& serializer, typename IndexType::Type start)
+{
+ uint32_t reserveSize = 2 * IndexType::SIZE + serializer.Size();
+ if(this->WriteHeaderWithReserve(serializer.ID(), qc, reserveSize))
+ {
+  return RangeWriteIterator<IndexType, WriteType>(start, serializer, *position);
+ }
+ else return RangeWriteIterator<IndexType, WriteType>::Null();
+}
+
+template <class CountType, class WriteType>
+CountWriteIterator<CountType, WriteType> HeaderWriter::IterateOverCount(QualifierCode qc, const DNP3Serializer<WriteType>& serializer)
+{
+ uint32_t reserveSize = CountType::SIZE + serializer.Size();
+ if(this->WriteHeaderWithReserve(serializer.ID(), qc, reserveSize))
+ {
+  return CountWriteIterator<CountType, WriteType>(serializer, *position);
+ }
+ else return CountWriteIterator<CountType, WriteType>::Null();
+}
+
+template <class IndexType>
+BitfieldRangeWriteIterator<IndexType> HeaderWriter::IterateOverSingleBitfield(GroupVariationID id, QualifierCode qc, typename IndexType::Type start)
+{
+ uint32_t reserveSize = 2 * IndexType::SIZE + 1;
+ if (this->WriteHeaderWithReserve(id, qc, reserveSize))
+ {
+  return BitfieldRangeWriteIterator<IndexType>(start, *position);
+ }
+ else return BitfieldRangeWriteIterator<IndexType>::Null();
+}
+
+template <class PrefixType, class WriteType>
+PrefixedWriteIterator<PrefixType, WriteType> HeaderWriter::IterateOverCountWithPrefix(QualifierCode qc, const DNP3Serializer<WriteType>& serializer)
+{
+ uint32_t reserveSize = 2 * PrefixType::SIZE + serializer.Size();
+ if(this->WriteHeaderWithReserve(serializer.ID(), qc, reserveSize))
+ {
+  return PrefixedWriteIterator<PrefixType, WriteType>(serializer, *position);
+ }
+ else return PrefixedWriteIterator<PrefixType, WriteType>::Null();
+}
+
+template <class PrefixType, class WriteType, class CTOType>
+PrefixedWriteIterator<PrefixType, WriteType> HeaderWriter::IterateOverCountWithPrefixAndCTO(QualifierCode qc, const DNP3Serializer<WriteType>& serializer, const CTOType& cto)
+{
+ this->Mark();
+ if (this->WriteSingleValue<openpal::UInt8, CTOType>(QualifierCode::UINT8_CNT, cto))
+ {
+  auto iter = IterateOverCountWithPrefix<PrefixType, WriteType>(qc, serializer);
+  if (!iter.IsValid())
+  {
+
+   this->Rollback();
+  }
+  return iter;
+ }
+ else
+ {
+  return PrefixedWriteIterator<PrefixType, WriteType>::Null();
+ }
+}
+
+}
+# 24 "/opt/PLC/OpenPLC_v3/utils/dnp3_src/cpp/libs/src/opendnp3/master/HeaderTypes.cpp" 2
+
+
+namespace opendnp3
+{
+
+Header Header::AllObjects(uint8_t group, uint8_t variation)
+{
+ return Header(group, variation);
+}
+
+Header Header::From(PointClass pc)
+{
+ switch (pc)
+ {
+ case(PointClass::Class0):
+  return Header::AllObjects(60, 1);
+ case(PointClass::Class1):
+  return Header::AllObjects(60, 2);
+ case(PointClass::Class2):
+  return Header::AllObjects(60, 3);
+ default:
+  return Header::AllObjects(60, 4);
+ }
+}
+
+Header Header::Range8(uint8_t group, uint8_t variation, uint8_t start, uint8_t stop)
+{
+ return Header(group, variation, start, stop);
+}
+
+Header Header::Range16(uint8_t group, uint8_t variation, uint16_t start, uint16_t stop)
+{
+ return Header(group, variation, start, stop);
+}
+
+Header Header::Count8(uint8_t group, uint8_t variation, uint8_t count)
+{
+ return Header(group, variation, count);
+}
+
+Header Header::Count16(uint8_t group, uint8_t variation, uint16_t count)
+{
+ return Header(group, variation, count);
+}
+
+Header::Header(uint8_t group, uint8_t var) : id(group, var), type(HeaderType::AllObjects) {}
+
+Header::Header(uint8_t group, uint8_t var, uint8_t start, uint8_t stop) : id(group, var), type(HeaderType::Ranged8)
+{
+ value.range8 = { start, stop };
+}
+
+Header::Header(uint8_t group, uint8_t var, uint16_t start, uint16_t stop) : id(group, var), type(HeaderType::Ranged16)
+{
+ value.range16 = { start, stop };
+}
+
+Header::Header(uint8_t group, uint8_t var, uint8_t count) : id(group, var), type(HeaderType::LimitedCount8)
+{
+ value.count8.value = count;
+}
+
+Header::Header(uint8_t group, uint8_t var, uint16_t count) : id(group, var), type(HeaderType::LimitedCount16)
+{
+ value.count16.value = count;
+}
+
+bool Header::WriteTo(opendnp3::HeaderWriter& writer) const
+{
+ switch (type)
+ {
+ case(HeaderType::AllObjects) :
+  return writer.WriteHeader(id, QualifierCode::ALL_OBJECTS);
+ case(HeaderType::Ranged8) :
+  return writer.WriteRangeHeader<openpal::UInt8>(QualifierCode::UINT8_START_STOP, id, value.range8.start, value.range8.stop);
+ case(HeaderType::Ranged16) :
+  return writer.WriteRangeHeader<openpal::UInt16>(QualifierCode::UINT16_START_STOP, id, value.range16.start, value.range16.stop);
+ case(HeaderType::LimitedCount8) :
+  return writer.WriteCountHeader<openpal::UInt8>(QualifierCode::UINT8_CNT, id, value.count8.value);
+ case(HeaderType::LimitedCount16) :
+  return writer.WriteCountHeader<openpal::UInt16>(QualifierCode::UINT16_CNT, id, value.count16.value);
+ default:
+  return false;
+ }
+}
+}
