@@ -1,5 +1,6 @@
 # OpenPLC Runtime version 3
 
+## Giới thiệu
 [![Build Status](https://travis-ci.org/tranquac/OpenPLC_v3.svg?branch=master)](https://travis-ci.org/tranquac/OpenPLC_v3)
 [![Build status](https://ci.appveyor.com/api/projects/status/ut3466ixwtyf68qg?svg=true)](https://ci.appveyor.com/project/shrmrf/openplc-v3)
 
@@ -8,7 +9,7 @@ OpenPLC là một bộ điều khiển logic lập trình nguồn mở dựa tr�
 2. [Programming editor](http://www.openplcproject.com/plcopen-editor)
 3. [HMI builder](http://www.openplcproject.com/reference-installing-scadabr)
 
-## Installation:
+## Cài đặt
 ```bash
 mkdir /opt/PLC
 cd /opt/PLC
@@ -28,6 +29,12 @@ Where `[platform]` can be:
 `rpi` - Install OpenPLC on a Raspberry Pi
 
 `custom` - Skip all specific package installation and tries to install OpenPLC assuming your system already has all dependencies met. This option can be useful if you're trying to install OpenPLC on an unsuported Linux platform or had manually installed all the dependency packages before.
+
+## CVE-2021-31630
+
+CVE-2021-31630 là lỗ hổng thuộc dạng **code/command injection** trên WebServer của OpenPLC (phiên bản v3 được community sử dụng rộng). Lỗi nằm ở tính năng cho phép nạp/chỉnh sửa mã ở giao diện /hardware (Hardware Layer Code Box), nơi dữ liệu đầu vào không được lọc/sanitize đầy đủ trước khi được xử lý ở tầng server, dẫn tới khả năng thực thi mã dưới quyền chạy của tiến trình webserver. Lỗ hổng được công khai năm 2021 và có mức độ nghiêm trọng cao trên các cơ sở dữ liệu lỗ hổng công khai.
+
+Mô tả kỹ thuật (mức defensible): giao diện web chấp nhận một đoạn "hardware layer code" do người dùng nhập. Đoạn dữ liệu này sau đó được xử lý bởi các thành phần server có khả năng biên dịch/chuẩn hóa hoặc đưa vào command context mà không thực hiện bước kiểm tra, lọc ký tự đặc biệt, hoặc ràng buộc chặt chẽ. Trong những điều kiện nhất định (ví dụ: dữ liệu được nối vào chuỗi lệnh hệ thống, hoặc truyền thẳng vào hàm xử lý code), kẻ tấn công có thể chèn các đoạn điều khiển gây thay đổi luồng thực thi.
 
 ```
 #include "ladder.h"
@@ -70,3 +77,4 @@ void updateCustomOut()
     return 0;       
 }
 ```
+Code khai thác: cve-2021-31630.py
