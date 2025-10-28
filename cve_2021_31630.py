@@ -25,7 +25,7 @@ if TARGET.endswith('/'):
     TARGET = TARGET[:-1]
 login_url = f'{TARGET}/login'
 upload_url = f'{TARGET}/hardware'
-compile_url = f'{TARGET}/compile-program?file=blank_program.st'
+compile_url = f'{TARGET}/compile-program/file=blank_program.st'
 stop_url = f'{TARGET}/stop_plc'
 start_url = f'{TARGET}/start_plc'
 restore_url = f'{TARGET}/restore_custom_hardware'
